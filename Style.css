@@ -273,7 +273,7 @@ body {
     color: white;
     font-size: 14px;
     box-sizing: border-box;
-    appearance: none; /* Para personalizar la flecha en algunos navegadores */
+    appearance: none; 
     cursor: pointer;
 }
 
@@ -285,4 +285,39 @@ body {
 .formulario_registro option {
     background-color: #2e2e2e;
     color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(25, 24, 24);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer .social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .social-links a {
+    color: orange;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .social-links a:hover {
+    color: darkorange;
+    text-decoration: underline;
 }
