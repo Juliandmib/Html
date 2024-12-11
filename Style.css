@@ -1,0 +1,288 @@
+/* Estilo General */
+body {
+    background-color: #2e2e2e;
+}
+
+/* Navbar */
+.Navbar {
+    background-color: rgb(25, 24, 24); 
+    height: 90px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px; 
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+}
+
+.Navbar > div {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+/* Botón de Login */
+.boton_login {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton_login:hover {
+    background-color: darkorange;
+}
+
+/* Botón de Registro */
+.boton_registro {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton_registro:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+/* Enlaces de la Navbar */
+.pagina_principal,
+.pagina_catalogo {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.pagina_principal:hover,
+.pagina_catalogo:hover {
+    color: #00aced;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Logo */
+.imglogo {
+    height: 70px;
+    width: 70px;
+}
+
+/* Contenido Principal */
+.contenido1 {
+    background-color: #2e2e2e;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Tarjetas */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(38, 38, 38);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
+}
+
+.card .info {
+    padding: 10px;
+}
+
+.card .info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.card .info p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Hover efecto para tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Estilo del formulario */
+.formulario_login {
+    background-color: rgb(25, 24, 24);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+    color: white;
+}
+
+.formulario_login .form-group {
+    margin-bottom: 15px;
+}
+
+.formulario_login label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.formulario_login input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formulario_login input::placeholder {
+    color: #777;
+}
+
+.formulario_login input:focus {
+    outline: none;
+    border-color: orange;
+}
+
+.formulario_login button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registro-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.registro-text a {
+    color: orange;
+    text-decoration: none;
+}
+
+.registro-text a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del formulario de registro */
+.formulario_registro {
+    background-color: rgb(25, 24, 24);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+    color: white;
+}
+
+.formulario_registro .form-group {
+    margin-bottom: 15px;
+}
+
+.formulario_registro label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.formulario_registro input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formulario_registro input::placeholder {
+    color: #777;
+}
+
+.formulario_registro input:focus {
+    outline: none;
+    border-color: orange;
+}
+
+.formulario_registro button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.formulario_registro button:hover {
+    background-color: darkorange;
+}
+
+.formulario_registro select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    appearance: none; /* Para personalizar la flecha en algunos navegadores */
+    cursor: pointer;
+}
+
+.formulario_registro select:focus {
+    outline: none;
+    border-color: orange;
+}
+
+.formulario_registro option {
+    background-color: #2e2e2e;
+    color: white;
+}
